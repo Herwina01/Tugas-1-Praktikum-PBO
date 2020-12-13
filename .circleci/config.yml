@@ -1,0 +1,57 @@
+class Mahasiswa :
+    #Deklarasi variabel
+    Biodata = ''
+    Nama    = ''
+    Nim     = ''
+    Jurusan = ''
+    Tempat  = ''
+    Tanggal = ''
+    Alamat  = ''
+    #constructor
+    def __init__(self,Biodata):
+        self.Biodata = Biodata
+    #Method untuk menginput data variabel nama
+    def get_Nama(self,Nama):
+        self.Nama=Nama
+    # Method untuk menginput data variabel NIM
+    def get_Nim(self,Nim):
+        self.Nim =Nim
+    # Method untuk menginput data variabel nama
+    def get_Jurusan(self,Jurusan):
+        self.Jurusan =Jurusan
+    # Method untuk menginput data variabel tempat
+    def get_Tempat(self,Tempat):
+        self.Tempat= Tempat
+    # Method untuk menginput data variabel tanggal
+    def get_Tanggal(self,Tanggal):
+        self.Tanggal =Tanggal
+    # Method untuk menginput data variabel alamat
+    def get_Alamat(self,Alamat):
+        self.Alamat =Alamat
+    # Method untuk mencetak keseluruhan
+    def cetak_hasil(self):
+        print("\n\n\n*************************\n",self.Biodata)
+        print("Nama    : ",self.Nama)
+        print("NIM     : ", self.Nim)
+        print("Jurusan : ", self.Jurusan)
+        print("Tempat  : ", self.Tempat)
+        print("Tanggal : ", self.Tanggal)
+        print("Alamat  : ", self.Alamat)
+#instance
+w=Mahasiswa('BIODATA MAHASISWA')
+var_Nama=input("Nama : ")
+var_Nim=input("NIM   : ")
+var_Jurusan=input("Jurusan : ")
+var_Tempat=input("Tempat_lahir : ")
+var_Tanggal=input("Tanggal_lahir : ")
+var_Alamat=input("Alamat : ")
+w.get_Nama(var_Nama)
+w.get_Nim(var_Nim)
+w.get_Jurusan(var_Jurusan)
+w.get_Tempat(var_Tempat)
+w.get_Tanggal(var_Tanggal)
+w.get_Alamat(var_Alamat)
+w.cetak_hasil()
+
+
+
